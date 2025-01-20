@@ -1,7 +1,9 @@
+package com.cd.badcode;
+
 import java.util.*;
 import java.sql.*;
-
 public class OrderProcessor {
+
     static Connection dbConnection;
     static double totalAmount = 0;
     static ArrayList<String> orderItems = new ArrayList<>();
