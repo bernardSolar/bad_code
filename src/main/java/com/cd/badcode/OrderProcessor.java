@@ -12,10 +12,10 @@ public class OrderProcessor {
     static boolean isVIP;
 
     public static void main(String[] args) {
-        ProcessNewOrder(new Display(), new ScannerInput());
+        processNewOrder(new ConsoleDisplay(), new ScannerInput());
     }
 
-    private static void ProcessNewOrder(Display display, Input input) {
+    public static void processNewOrder(Display display, Input input) {
         try {
             dbConnection = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/store", "root", "password123"

@@ -1,7 +1,5 @@
 package com.cd.badcode;
 
-public class Display {
-    public void show(String message) {
-        System.out.println(message);
-    }
+public interface Display {
+    void show(String message);
 }
